@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/ringbook/Logo.png";
+import logo from "@/assets/astrolok/App Icon.png";
 import { PLAY_STORE_URL, APP_NAME } from "@/lib/constants";
 
 const navLinks = [
@@ -51,8 +51,8 @@ const Header = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-4 py-3 lg:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt={APP_NAME} className="h-9 w-9 rounded-xl object-cover shadow-sm border border-violet-500/10" />
-          <span className="font-display text-2xl font-extrabold text-slate-900 tracking-tight">{APP_NAME}</span>
+          <img src={logo} alt={APP_NAME} className="h-9 w-9 rounded-xl object-cover shadow-sm border border-amber-500/20" />
+          <span className="font-display text-2xl font-bold text-amber-950 tracking-tight">{APP_NAME}</span>
         </Link>
 
         {/* Desktop nav */}
@@ -62,7 +62,7 @@ const Header = () => {
               <button
                 key={link.label}
                 onClick={() => handleNavClick(link.href)}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-muted-foreground hover:text-amber-700 transition-colors"
               >
                 {link.label}
               </button>
@@ -70,14 +70,14 @@ const Header = () => {
               <Link
                 key={link.label}
                 to={link.href}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                className="text-sm font-medium text-muted-foreground hover:text-amber-700 transition-colors"
               >
                 {link.label}
               </Link>
             )
           )}
           <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer">
-            <Button className="rounded-full bg-primary text-primary-foreground hover:scale-[1.04] transition-transform shadow-md px-6">
+            <Button className="rounded-full bg-amber-600 hover:bg-amber-700 text-white hover:scale-[1.04] transition-transform shadow-md px-6">
               <Download className="w-4 h-4 mr-2" />
               Download App
             </Button>
@@ -105,7 +105,7 @@ const Header = () => {
               <button
                 key={link.label}
                 onClick={() => handleNavClick(link.href)}
-                className="text-left py-2 px-3 rounded-lg text-sm font-medium text-muted-foreground hover:bg-secondary hover:text-primary transition-colors"
+                className="text-left py-2 px-3 rounded-lg text-sm font-medium text-muted-foreground hover:bg-secondary hover:text-amber-700 transition-colors"
               >
                 {link.label}
               </button>
@@ -113,14 +113,14 @@ const Header = () => {
               <Link
                 key={link.label}
                 to={link.href}
-                className="py-2 px-3 rounded-lg text-sm font-medium text-muted-foreground hover:bg-secondary hover:text-primary transition-colors"
+                className="py-2 px-3 rounded-lg text-sm font-medium text-muted-foreground hover:bg-secondary hover:text-amber-700 transition-colors"
               >
                 {link.label}
               </Link>
             )
           )}
           <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" className="mt-2">
-            <Button className="w-full rounded-full bg-primary text-primary-foreground shadow-md">
+            <Button className="w-full rounded-full bg-amber-600 hover:bg-amber-700 text-white shadow-md">
               <Download className="w-4 h-4 mr-2" />
               Download App
             </Button>

@@ -1,5 +1,5 @@
-export const APP_NAME = "RingBook";
-export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=zarvonis.car.app";
+export const APP_NAME = "AstroLok";
+export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=zarvonis.astro.app";
 
 export const COMPANY_DETAILS = {
   name: "Zarvonis Ventures Private Limited",
@@ -14,5 +14,3 @@ export const COMPANY_DETAILS = {
   gstin: "29AADCZ0765B1ZC",
   email: "support@zarvonis.com",
 };
-
-

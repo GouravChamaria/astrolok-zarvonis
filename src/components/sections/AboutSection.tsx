@@ -1,38 +1,40 @@
 import AnimatedSection from "@/components/AnimatedSection";
-import logo from "@/assets/ringbook/Logo.png";
-import { APP_NAME } from "@/lib/constants";
+import { COMPANY_DETAILS, APP_NAME } from "@/lib/constants";
 
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
-              What is <span className="text-primary">{APP_NAME}</span>?
+        <div className="max-w-4xl mx-auto">
+          <AnimatedSection className="text-center mb-12">
+            <span className="text-amber-600 font-semibold text-xs uppercase tracking-widest font-body">
+              About Us
+            </span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mt-2">
+              Guided by Tradition, Powered by Innovation
             </h2>
-            <div className="space-y-4 text-muted-foreground font-body leading-relaxed">
-              <p>
-                <strong className="text-foreground">{APP_NAME}</strong> is your ultimate digital catalog and customization platform for smartphones. We created RingBook to make audio and visual customization effortless, stylish, and fun.
-              </p>
-              <p>
-                Browse through thousands of crystal-clear ringtones, trending notification sounds, custom morning alarms, and stunning 4K & HD wallpapers — categorized for quick browsing and instant downloads.
-              </p>
-              <p>
-                Whether you want a relaxing nature sound for your wake-up alarm, a viral melody for incoming calls, or a crisp aesthetic wallpaper for your lock screen, RingBook has you covered.
-              </p>
-              <p className="font-semibold text-violet-700">Available exclusively on Android.</p>
-            </div>
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
-            {/* Logo showcase */}
-            <div className="relative flex items-center justify-center">
-              <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-violet-100 to-secondary flex items-center justify-center shadow-inner">
-                <div className="w-56 h-56 md:w-72 md:h-72 rounded-full border-2 border-violet-500/10 flex items-center justify-center">
-                  <div className="w-40 h-40 md:w-48 md:h-48 rounded-3xl bg-white p-4 shadow-xl border border-violet-500/10 flex items-center justify-center overflow-hidden">
-                    <img src={logo} alt={APP_NAME} className="w-full h-full object-cover rounded-2xl" />
-                  </div>
+            <div className="bg-card rounded-3xl p-8 md:p-12 border border-amber-500/10 shadow-lg space-y-6 text-muted-foreground font-body leading-relaxed">
+              <p>
+                <strong className="text-foreground">{APP_NAME}</strong> is a premiere mobile application developed by{" "}
+                <strong className="text-foreground">{COMPANY_DETAILS.name}</strong>, aimed at bringing the timeless wisdom of Vedic astrology, Janam Kundali readings, and personalized spiritual guidance to millions of users globally.
+              </p>
+              <p>
+                Whether you are seeking clarity on your career, love, health, or personal growth, AstroLok provides accurate astrological calculations and empathetic guidance to illuminate your path.
+              </p>
+
+              <div className="pt-6 border-t border-border/60 grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                <div>
+                  <h4 className="font-bold text-foreground font-display text-base mb-1">Company Details</h4>
+                  <p>{COMPANY_DETAILS.legalName}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{COMPANY_DETAILS.fullAddress}</p>
+                </div>
+                <div>
+                  <h4 className="font-bold text-foreground font-display text-base mb-1">Contact Information</h4>
+                  <p>Email: {COMPANY_DETAILS.email}</p>
+                  <p>Phone: {COMPANY_DETAILS.phoneFormatted}</p>
                 </div>
               </div>
             </div>
@@ -44,5 +46,3 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
-
-

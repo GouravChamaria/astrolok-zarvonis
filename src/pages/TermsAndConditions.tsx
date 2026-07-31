@@ -2,7 +2,18 @@ import Layout from "@/components/Layout";
 import AnimatedSection from "@/components/AnimatedSection";
 import { APP_NAME, COMPANY_DETAILS } from "@/lib/constants";
 
-const isMeraNoor = APP_NAME === "Mera Noor";
+const getServiceDescription = () => {
+  if (APP_NAME === "Mera Noor") {
+    return `${APP_NAME} is an Islamic spiritual application available on Android devices. The app offers a curated collection of Islamic devotional ringtones, HD wallpapers, alarms, naats, and duas. Users can preview, download, and set these assets on their devices, and share them to platforms including WhatsApp.`;
+  }
+  if (APP_NAME === "AstroLok") {
+    return `${APP_NAME} is a Vedic astrology and horoscope application available on Android devices. The app provides personalized Janam Kundali birth chart generation, daily horoscope forecasts, planetary transit updates, Gun Milan compatibility matching, and access to astrological consultations and Vedic remedies.`;
+  }
+  if (APP_NAME === "Dostana") {
+    return `${APP_NAME} is a wellness, counselling, and emotional support application available on Android devices. The app connects users with compassionate listeners, verified counsellors, and guidance tools for personal well-being, confidential conversations, and mental peace.`;
+  }
+  return `${APP_NAME} is a digital catalog and customization application available on Android devices. The app offers a curated collection of HD wallpapers, ringtones, alarms, and sound effects. Users can preview, download, and set these assets on their devices, and share them to platforms including WhatsApp.`;
+};
 
 const sections = [
   {
@@ -22,9 +33,7 @@ Address: ${COMPANY_DETAILS.fullAddress}`,
   },
   {
     heading: "DESCRIPTION OF SERVICE",
-    body: isMeraNoor
-      ? `${APP_NAME} is an Islamic spiritual application available on Android devices. The app offers a curated collection of Islamic devotional ringtones, HD wallpapers, alarms, naats, and duas. Users can preview, download, and set these assets on their devices, and share them to platforms including WhatsApp.`
-      : `${APP_NAME} is a digital catalog and customization application available on Android devices. The app offers a curated collection of HD wallpapers, ringtones, alarms, and sound effects. Users can preview, download, and set these assets on their devices, and share them to platforms including WhatsApp.`,
+    body: getServiceDescription(),
   },
   {
     heading: "USER ACCOUNTS",
@@ -32,13 +41,13 @@ Address: ${COMPANY_DETAILS.fullAddress}`,
   },
   {
     heading: "SUBSCRIPTIONS AND PAYMENTS",
-    body: `${APP_NAME} offers a free trial period and recurring subscription plans, the details and pricing of which are displayed within the app at the time of purchase. All pricing is in Indian Rupees (INR) and is inclusive of applicable taxes.
+    body: `${APP_NAME} offers a 3-day trial period for ₹3 followed by a recurring monthly subscription plan at ₹249/month, the details of which are displayed within the app at the time of purchase. All pricing is in Indian Rupees (INR) and is inclusive of applicable taxes.
 
-The trial period, trial features, duration, and limitations are variable and subject to change at any time without prior notice. Both trial and paid versions may include usage restrictions such as message limits, download quotas, feature caps, or access limitations, which may be modified at our sole discretion.
+The trial period, trial features, duration, and limitations are variable and subject to change at any time without prior notice. Both trial and paid versions may include usage restrictions such as feature caps or access limitations, which may be modified at our sole discretion.
 
 By subscribing, you authorise us (through our payment gateway partner) to charge your selected payment method on a recurring basis until you cancel. Your subscription renews automatically at the end of each billing cycle unless you cancel before the renewal date.
 
-If you cancel a paid subscription, you retain access to premium features until the end of the current paid billing cycle. If you cancel during a free trial, your access to premium features ends immediately upon cancellation.
+If you cancel a paid subscription, you retain access to premium features until the end of the current paid billing cycle. If you cancel during a trial, your access to premium features ends immediately upon cancellation.
 
 We reserve the right to modify subscription pricing and plans with reasonable advance notice provided within the app. Continued usage after such changes constitutes acceptance of the revised pricing and terms.`,
   },
@@ -54,7 +63,7 @@ If you are experiencing technical difficulties, we encourage you to contact our 
   },
   {
     heading: "PERMITTED USE OF CONTENT",
-    body: `All visual and audio assets available on ${APP_NAME} are provided for personal, non-commercial use only. Content may not be re-sold, redistributed, or commercialised. Sharing to personal WhatsApp status or family chats is encouraged.`,
+    body: `All services and content available on ${APP_NAME} are provided for personal, non-commercial use only. Content may not be re-sold, redistributed, or commercialised without explicit written consent from ${COMPANY_DETAILS.legalName}.`,
   },
   {
     heading: "GOVERNING LAW AND JURISDICTION",
@@ -112,4 +121,3 @@ const TermsAndConditions = () => {
 };
 
 export default TermsAndConditions;
-
