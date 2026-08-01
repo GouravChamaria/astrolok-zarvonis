@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/astrolok/App Icon.png";
+import logo from "@/assets/astrorekha/logo.png";
 import { PLAY_STORE_URL, APP_NAME } from "@/lib/constants";
 
 const navLinks = [

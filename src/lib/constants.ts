@@ -1,4 +1,4 @@
-export const APP_NAME = "AstroLok";
+export const APP_NAME = "Astro Rekha";
 export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=zarvonis.astro.app";
 
 export const COMPANY_DETAILS = {

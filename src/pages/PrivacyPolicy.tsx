@@ -16,7 +16,7 @@ Address: ${COMPANY_DETAILS.fullAddress}`,
   },
   {
     heading: "INTRODUCTION",
-    body: `Welcome to ${APP_NAME}. ${APP_NAME} is an Islamic spiritual and content platform available on Android devices. Through ${APP_NAME}, users can browse, set, download, and share devotional ringtones, wallpapers, alarms, naats, and duas for daily practice.
+    body: `Welcome to ${APP_NAME}. ${APP_NAME} is a Vedic astrology, Kundli, and AI Pandit Ji guidance platform available on Android devices. Through ${APP_NAME}, users can generate astrological birth charts, receive daily horoscopes, and consult with AI Pandit Ji (Sastri Ji) for career, relationship, and personal guidance.
 
 This Privacy Policy explains what information we collect, how we use it, and how we protect it. By downloading, installing, or using the ${APP_NAME} app, you agree to the practices described in this policy.`,
   },
@@ -24,11 +24,11 @@ This Privacy Policy explains what information we collect, how we use it, and how
     heading: "INFORMATION WE COLLECT",
     body: `<strong>A. Information You Provide</strong>
 
-When you sign in to ${APP_NAME}, we use Google Sign-In as an authentication method. Through this process, we receive your full name, email address, and profile photo. We do not collect or store passwords.
+When you sign in to ${APP_NAME}, we use Google Sign-In as an authentication method. Through this process, we receive your full name, email address, and profile photo. When setting up your Kundli, you may voluntarily enter birth details including name, gender, date of birth, time of birth, and city of birth. We do not collect or store passwords.
 
 <strong>B. Usage Data</strong>
 
-We automatically collect certain usage data when you interact with the app. This includes information about which ringtones, wallpapers, alarms, or naats you download or share, and interaction patterns within the app.
+We automatically collect certain usage data when you interact with the app. This includes information about chat interactions with AI Pandit Ji, generated charts, and navigation patterns within the app.
 
 <strong>C. Device Information</strong>
 
@@ -36,19 +36,15 @@ We collect basic device information including device model, OS version, IP addre
   },
   {
     heading: "WHAT WE DO NOT COLLECT",
-    body: `We do not collect precise GPS location. We do not access contacts, call logs, camera, or microphone. We do not collect financial credentials directly; payment processing is handled securely by third-party payment gateways.`,
+    body: `We do not collect precise GPS location. We do not access contacts, call logs, camera, or microphone. We do not collect financial credentials directly; payment processing for trials and subscriptions is handled securely by Google Play.`,
   },
   {
     heading: "HOW WE USE YOUR INFORMATION",
-    body: `We use your account details to manage your ${APP_NAME} account, verify subscriptions, and respond to support queries. We do not sell or rent your personal data to third parties.`,
-  },
-  {
-    heading: "CONTENT DOWNLOADS",
-    body: `The ${APP_NAME} app allows users to download wallpapers and audio ringtones to their local storage. Content is provided for personal non-commercial use only.`,
+    body: `We use your birth details solely to calculate astrological charts and provide customized AI Pandit Ji guidance. We use your account details to manage your ${APP_NAME} account, verify subscriptions, and respond to support queries. We do not sell or rent your personal data to third parties.`,
   },
   {
     heading: "SUBSCRIPTIONS AND BILLING",
-    body: `${APP_NAME} offers trial periods and subscription plans. Subscription status is managed securely. You can manage or cancel your subscription within the app.`,
+    body: `${APP_NAME} offers trial periods and subscription plans. Subscription status is managed securely via Google Play Billing. You can manage or cancel your subscription anytime within your Google Play Account settings.`,
   },
   {
     heading: "ACCOUNT DELETION",

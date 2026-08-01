@@ -6,7 +6,7 @@ import { APP_NAME, COMPANY_DETAILS } from "@/lib/constants";
 const sections = [
   {
     heading: "We’d Love to Hear from You",
-    body: `Whether you have a question about your subscription, need help with the app, want to report an issue, or simply want to share your experience with ${APP_NAME}, our support team is here to help. We are dedicated to bringing divine audio and serene wallpapers to your screen every day, and we take every message seriously.`,
+    body: `Whether you have a question about your subscription, need help with the app, want to report an issue, or simply want to share your experience with ${APP_NAME}, our support team is here to help. We are dedicated to bringing divine astrological guidance and peace to your life every day, and we take every message seriously.`,
   },
   {
     heading: "How to Reach Us",
@@ -26,7 +26,7 @@ const sections = [
   },
   {
     heading: "General Feedback",
-    body: `We genuinely value feedback from our community. If you have suggestions for new wallpaper collections, ringtones, or app features, please reach out to us.`,
+    body: `We genuinely value feedback from our community. If you have suggestions for new astrological features, horoscopes, or app capabilities, please reach out to us.`,
   },
 ];
 

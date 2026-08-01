@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/astrolok/App Icon.png";
+import logo from "@/assets/astrorekha/logo.png";
 import { COMPANY_DETAILS, APP_NAME } from "@/lib/constants";
 
 const Footer = () => {
@@ -9,11 +9,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-amber-900/60">
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <img src={logo} alt={APP_NAME} className="h-10 w-10 rounded-xl object-cover" />
+              <img src={logo} alt={APP_NAME} className="h-10 w-10 rounded-xl object-cover border border-amber-500/20" />
               <span className="font-display text-2xl font-bold text-white">{APP_NAME}</span>
             </div>
             <p className="text-sm max-w-sm text-amber-200/70">
-              Vedic Astrology, Janam Kundali readings, Daily Horoscopes & Spiritual Guidance for personal alignment and life direction.
+              Personalized Vedic astrology, Kundli birth charts, daily horoscopes & 24/7 AI Pandit Ji guidance.
             </p>
             <p className="text-xs text-amber-300/60">
               Developed & Maintained by <strong className="text-white">{COMPANY_DETAILS.name}</strong>

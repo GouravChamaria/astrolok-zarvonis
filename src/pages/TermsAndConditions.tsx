@@ -3,16 +3,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import { APP_NAME, COMPANY_DETAILS } from "@/lib/constants";
 
 const getServiceDescription = () => {
-  if (APP_NAME === "Mera Noor") {
-    return `${APP_NAME} is an Islamic spiritual application available on Android devices. The app offers a curated collection of Islamic devotional ringtones, HD wallpapers, alarms, naats, and duas. Users can preview, download, and set these assets on their devices, and share them to platforms including WhatsApp.`;
-  }
-  if (APP_NAME === "AstroLok") {
-    return `${APP_NAME} is a Vedic astrology and horoscope application available on Android devices. The app provides personalized Janam Kundali birth chart generation, daily horoscope forecasts, planetary transit updates, Gun Milan compatibility matching, and access to astrological consultations and Vedic remedies.`;
-  }
-  if (APP_NAME === "Dostana") {
-    return `${APP_NAME} is a wellness, counselling, and emotional support application available on Android devices. The app connects users with compassionate listeners, verified counsellors, and guidance tools for personal well-being, confidential conversations, and mental peace.`;
-  }
-  return `${APP_NAME} is a digital catalog and customization application available on Android devices. The app offers a curated collection of HD wallpapers, ringtones, alarms, and sound effects. Users can preview, download, and set these assets on their devices, and share them to platforms including WhatsApp.`;
+  return `${APP_NAME} is a Vedic astrology, Kundli, and AI Pandit Ji guidance application available on Android devices. The app offers astrological birth chart generation, planetary transit analysis, daily horoscope insights, and interactive chat consultations with AI Pandit Ji (Sastri Ji). Users can input birth details, view personalized readings, and ask questions regarding career, marriage, health, and life guidance.`;
 };
 
 const sections = [

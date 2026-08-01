@@ -1,16 +1,18 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import PhoneMockup from "@/components/PhoneMockup";
 import { APP_NAME } from "@/lib/constants";
-import screen1 from "@/assets/astrolok/Screen 1.png";
-import screen2 from "@/assets/astrolok/Screen 2.png";
-import screen3 from "@/assets/astrolok/Screen 3.png";
-import screen4 from "@/assets/astrolok/Screen 4.png";
+import screen0 from "@/assets/astrorekha/screen-0.png";
+import screen1 from "@/assets/astrorekha/screen-1.png";
+import screen2 from "@/assets/astrorekha/screen-2.png";
+import screen3 from "@/assets/astrorekha/screen-3.png";
+import screen4 from "@/assets/astrorekha/screen-4.png";
 
 const screenshots = [
-  { src: screen1, alt: `${APP_NAME} Kundali Screen` },
-  { src: screen2, alt: `${APP_NAME} Horoscope Screen` },
-  { src: screen3, alt: `${APP_NAME} Compatibility Screen` },
-  { src: screen4, alt: `${APP_NAME} Astrologer Consult Screen` },
+  { src: screen0, title: "Serene Onboarding", alt: `${APP_NAME} Onboarding Screen` },
+  { src: screen1, title: "Kundli & Chart Setup", alt: `${APP_NAME} Birth Details Screen` },
+  { src: screen2, title: "AI Pandit Ji Consultation", alt: `${APP_NAME} Consultation Screen` },
+  { src: screen3, title: "Special ₹1 Trial Offer", alt: `${APP_NAME} Intro Trial Screen` },
+  { src: screen4, title: "Settings & Preferences", alt: `${APP_NAME} Settings Screen` },
 ];
 
 const ScreenshotsSection = () => {
@@ -18,7 +20,7 @@ const ScreenshotsSection = () => {
     <section className="py-20 lg:py-28 bg-secondary/50 overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         <AnimatedSection className="text-center mb-16">
-          <span className="text-amber-600 font-semibold text-xs uppercase tracking-widest font-body">
+          <span className="text-amber-600 font-bold text-xs uppercase tracking-widest font-body">
             App Experience
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mt-2">
@@ -29,11 +31,12 @@ const ScreenshotsSection = () => {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {screenshots.map((s, i) => (
-            <AnimatedSection key={i} delay={i * 0.15}>
-              <div className="flex justify-center">
-                <PhoneMockup src={s.src} alt={s.alt} label={s.alt} />
+            <AnimatedSection key={i} delay={i * 0.1} className="text-center">
+              <div className="flex flex-col items-center">
+                <PhoneMockup src={s.src} alt={s.alt} label={s.title} />
+                <p className="mt-4 text-sm font-semibold font-body text-foreground/80">{s.title}</p>
               </div>
             </AnimatedSection>
           ))}
