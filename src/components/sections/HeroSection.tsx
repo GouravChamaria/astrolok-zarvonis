@@ -23,20 +23,20 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100/90 border border-amber-300/60 w-fit text-amber-950 font-bold text-xs tracking-wide uppercase font-body"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100/80 border border-amber-300/50 w-fit text-amber-900 font-semibold text-xs tracking-wide uppercase font-body"
             >
               <Sparkles className="w-3.5 h-3.5 text-amber-600" />
-              <span>Vedic Astrology • Kundli • AI Pandit Ji</span>
+              <span>Vedic Astrology, Kundali & Daily Horoscopes</span>
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-display font-extrabold text-foreground leading-tight"
+              className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight"
             >
-              Discover Your Future.{" "}
-              <span className="text-amber-600">Begin With Peace.</span>
+              Discover Your Cosmic Destiny with{" "}
+              <span className="text-amber-600">{APP_NAME}</span>
             </motion.h1>
 
             <motion.p
@@ -45,7 +45,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-base md:text-lg text-muted-foreground max-w-lg font-body leading-relaxed"
             >
-              Personalized Vedic astrology & Kundli guidance by AI Pandit Ji. Ask anything about career, marriage, health, and life partner guidance on Android.
+              Get precise Janam Kundali generation, daily horoscope forecasts, planetary Dasha alerts, Gun Milan compatibility, and authentic Vedic remedies on Android.
             </motion.p>
 
             <motion.div
